@@ -1,5 +1,16 @@
 # id-resolver
+
 中国身份证号码解析器，传入身份证号，返回 【户籍地】【出生年月】【性别】
+
+```javascript
+var idResolver = require('id-resolver');
+
+//只处理 18位字符串
+console.log(idResolver.get('430421197710177894'));
+// { locale: '湖南省 衡阳市 衡阳县', birthday: '19771017', sex: '男' }
+console.log(idResolver.get('45222319950814004X'));
+// { locale: '无对应数据', birthday: '19950814', sex: '女' }
+```
 
 号码的结构
 公民身份号码是特征组合码，由十七位数字本体码和一位校验码组成。排列顺序从左至右依次为：六位数字地址码，八位数字出生日期码，三位数字顺序码和一位数字校验码。
