@@ -1,6 +1,6 @@
 {
   "name": "id-resolver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "中国身份证号码解析器，传入身份证号，返回 【户籍地】【出生年月】【性别】",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/haobingwang/id-resolver/issues"
   },
-  "homepage": "https://github.com/haobingwang/id-resolver#readme"
+  "homepage": "https://github.com/haobingwang/id-resolver#readme",
+  "dependencies": {
+    "gb2260": "^0.6.0-beta"
+  }
 }
