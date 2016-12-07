@@ -1,4 +1,4 @@
-# id-resolver
+# id-resolver 已遗弃，请使用 id-parser
 
 中国身份证号码解析器，传入身份证号，返回 【户籍地】【出生年月】【性别】
 
